@@ -3,6 +3,9 @@
 //import 'package:demoapp/const/image_picker_bytes.dart';
 import 'package:flutter/material.dart';
 import 'package:new_pro/screens/homescreen.dart';
+import 'package:new_pro/screens/loginscreen.dart';
+
+
 
 void main() {
   runApp(EcoBinApp());
@@ -13,7 +16,7 @@ class EcoBinApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Mob-Bin',
+     
       theme: ThemeData(
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Colors.green[50],
@@ -26,7 +29,7 @@ class EcoBinApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             foregroundColor: Colors.white,
-            backgroundColor: Colors.green[700],
+            backgroundColor: const Color.fromARGB(255, 62, 165, 67),
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
@@ -38,7 +41,7 @@ class EcoBinApp extends StatelessWidget {
           bodyMedium: TextStyle(fontSize: 16, color: Colors.grey[800]),
         ),
       ),
-      home: HomeScreen(),
+      home: Loginscreen(),
     );
   }
 }

@@ -26,14 +26,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mob-Bin'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Mob-Bin'),
+      // ),
+      backgroundColor:const Color.fromARGB(255, 210, 255, 163),
       body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green[800],
-        unselectedItemColor: Colors.grey[600],
+        selectedItemColor:  Color.fromARGB(255, 33, 143, 37),
+        unselectedItemColor: Colors.black,
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(

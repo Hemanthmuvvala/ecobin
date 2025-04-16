@@ -11,9 +11,11 @@ class HomeContentScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Icon(Icons.eco,color:const Color.fromARGB(255, 33, 143, 37),size: 200,),
           Text(
             'Welcome to Mob-Bin!',
             style: Theme.of(context).textTheme.titleLarge,
+            
           ),
           SizedBox(height: 20),
           AppButton(
